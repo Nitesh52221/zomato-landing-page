@@ -7,6 +7,9 @@
   .hero_section {
     min-height: 80vh;
   }
+  .collections_heading {
+    font-size: 2rem;
+  }
 
   .hero_content_inputs {
     flex-direction: column;
@@ -45,13 +48,26 @@
 }
 @media only screen and (max-width: 890px) {
   .navbar {
-    padding: 5px 110px;
+    padding: 5px 60px;
   }
   .navbar_menu_container .navbar_menu_item_user_icon {
     display: flex;
+    color: #ef4f5f;
   }
   .navbar_menu_item {
     display: none;
+  }
+}
+/* localities section */
+@media only screen and (max-width: 669px) and (min-width: 300px) {
+  .popular_localities_place {
+    flex: 90%;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1000px) {
+  .popular_localities_place {
+    flex: 45%;
   }
 }
 @media only screen and (max-width: 1100px) and (min-width: 890px) {
@@ -62,5 +78,31 @@
 @media only screen and (max-width: 510px) {
   .navbar {
     padding: 5px 50px;
+  }
+}
+/* GEtt the app style */
+@media only screen and (max-width: 1200px) {
+  .get_the_app_image_section img {
+    display: none;
+  }
+}
+
+/* Footer styling */
+
+@media only screen and (max-width: 900px) {
+  .navigation_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navigation_container {
+    grid-template-columns: 1fr;
   }
 }
