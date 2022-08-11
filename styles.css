@@ -25,7 +25,6 @@
 .navbar_menu_container {
   display: flex;
 
-  /* width: 50%; */
   gap: 28px;
 }
 
@@ -60,30 +59,54 @@
   font-size: 35px;
   text-align: center;
 }
-.hero_content_inputs {
+
+.search_Box {
   background: white;
-  padding: 15px;
   width: 50%;
   border-radius: 10px;
+  padding: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.hero_content_input_location,
-.hero_content_input_search {
+.search_Location {
+  width: 30%;
+  border-right: 2px solid #777;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search_Location i {
+  position: absolute;
+  font-size: 1.1rem;
+  color: rgb(255, 126, 139);
+}
+.search_Location input {
+  width: 100%;
+  padding-left: 22px;
+  font-size: 1.1rem;
   border-style: none;
   outline: none;
-  padding: 6px;
 }
-
-.hero_content_input_location {
-  width: 30%;
-  border-right: 2px solid #e0e0e0;
-}
-
-.hero_content_input_search {
+.search_Bar {
   width: 70%;
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search_Bar i {
+  position: absolute;
+  font-size: 1.1rem;
+  color: rgb(130, 130, 130);
+}
+.search_Bar input {
+  width: 100%;
+  padding-left: 25px;
+
+  font-size: 1.1rem;
+  border-style: none;
+  outline: none;
 }
 
 .container {
@@ -269,9 +292,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 2rem; */
+
   margin-top: 12px;
   font-weight: 400;
+  gap: 1rem;
 }
 
 /* get_the_app section  */
@@ -406,6 +430,7 @@ button {
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem 2rem;
 }
 .explore_near_me_box :hover {
